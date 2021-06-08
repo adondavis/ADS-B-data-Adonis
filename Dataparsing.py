@@ -68,13 +68,17 @@ def parse_data(line):
             r_airplane[index_r_airplane].set_emergency(line[index_emergency])
 
 read(CSV_FILE)
-#print(len(r_airplane))
-print(r_airplane[1].get_clock())
-print(r_airplane[1].get_ident())
-print(r_airplane[1].get_alt())
-print(r_airplane[1].get_position())
-print(r_airplane[1].get_speed())
-print(r_airplane[1].get_emergency())
+# checks length. I believe representing the number of planes
+print(len(r_airplane))
+# gives all data for a singular plane based off index value "[]"
+a = 13
+print("Hexid: " + str(r_airplane[a].get_hexid()))
+print("Clock: " + str(r_airplane[a].get_clock()))
+print("Identification: " + str(r_airplane[a].get_ident()))
+print("Altitude: " + str(r_airplane[a].get_alt()))
+print("Position(Lat., Log.): " + str(r_airplane[a].get_position()))
+print("Speed(mph): " + str(r_airplane[a].get_speed()))
+print("Emergency Status: " + str(r_airplane[a].get_emergency()))
 
 
 
