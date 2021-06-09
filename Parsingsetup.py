@@ -15,7 +15,8 @@ class Airplane:
         # self.track = []
         # self.nav_qnh = []
         self.emergency = []  # if emergency status active
-
+        self.lat = []
+        self.long = []
     # getter and setter setup
     
 
@@ -60,3 +61,15 @@ class Airplane:
 
     def get_emergency(self):
         return self.emergency
+
+    def set_lat(self, v):
+        self.lat.append(v)
+
+    def get_lat(self):
+        return self.lat
+
+    def set_long(self, x):
+        self.long.append(x)
+
+    def get_long(self):
+        return self.long
